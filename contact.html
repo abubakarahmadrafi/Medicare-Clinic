@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MediCare Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="homepage.html">🏥 MediCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== END NAVBAR ========== -->
+
+
+    <!-- ========== PAGE HEADER ========== -->
+    <div class="page-header">
+        <h1 class="fw-bold">Contact Us</h1>
+        <p>We would love to hear from you. Reach out anytime.</p>
+    </div>
+
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- LEFT SIDE: Contact Form -->
+                <div class="col-md-6">
+                    <div class="card p-4">
+                        <h4 class="fw-bold mb-4">Send Us a Message</h4>
+
+                        <!-- onsubmit calls sendMessage() in main.js -->
+                        <form id="contactForm" onsubmit="sendMessage(event)">
+
+                            <!-- NAME -->
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Your Name</label>
+                                <input type="text" class="form-control" id="contactName"
+                                    placeholder="Enter your name">
+                                <!-- Error shown if name is empty -->
+                                <div class="error-msg" id="contactNameError">⚠ Please enter your name.</div>
+                            </div>
+
+                            <!-- EMAIL -->
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Email Address</label>
+                                <input type="text" class="form-control" id="contactEmail"
+                                    placeholder="Enter your email">
+                                <!-- Error shown if email is invalid -->
+                                <div class="error-msg" id="contactEmailError">⚠ Please enter a valid email.</div>
+                            </div>
+
+                            <!-- MESSAGE -->
+                            <div class="mb-4">
+                                <label class="form-label fw-bold">Message</label>
+                                <textarea class="form-control" id="contactMessage" rows="4"
+                                    placeholder="Write your message here..."></textarea>
+                                <!-- Error shown if message is empty -->
+                                <div class="error-msg" id="contactMessageError">⚠ Please write a message.</div>
+                            </div>
+
+                            <!-- SUBMIT BUTTON -->
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+
+                        </form>
+
+                        <!-- Success message - hidden by default -->
+                        <!-- JavaScript shows this after successful submit -->
+                        <div class="success-msg" id="contactSuccessMsg">
+                            ✅ Message sent successfully! We will reply soon.
+                        </div>
+
+                    </div>
+                </div>
+                <!-- END LEFT SIDE -->
+
+
+                <!-- RIGHT SIDE: Clinic Info + Map -->
+                <div class="col-md-6">
+
+                    <!-- Clinic Details Card -->
+                    <div class="card p-4 mb-4">
+                        <h4 class="fw-bold mb-4">Clinic Information</h4>
+
+                        <!-- d-flex puts icon and text side by side -->
+                        <div class="d-flex mb-3">
+                            <div class="fs-4 me-3">📍</div>
+                            <div>
+                                <strong>Address</strong>
+                                <p class="text-muted mb-0">Block A, Nishtar, Multan, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-3">
+                            <div class="fs-4 me-3">📞</div>
+                            <div>
+                                <strong>Phone</strong>
+                                <p class="text-muted mb-0">0370-3578121</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-3">
+                            <div class="fs-4 me-3">📧</div>
+                            <div>
+                                <strong>Email</strong>
+                                <p class="text-muted mb-0">info@medicare.pk</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-3">
+                            <div class="fs-4 me-3">🕐</div>
+                            <div>
+                                <strong>Opening Hours</strong>
+                                <p class="text-muted mb-0">Mon - Sat: 9:00 AM – 8:00 PM</p>
+                                <p class="text-muted mb-0">Sunday: 10:00 AM – 4:00 PM</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Google Maps Embed -->
+                    <!-- This is an iframe - it shows a live Google Map -->
+                    <!-- No JavaScript needed - Google provides this code -->
+                    <div class="card overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108486.546377!2d71.4015!3d30.1575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b34775cd85fbd%3A0xc7f0c6e4d1f4f4d7!2sMultan%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1699100000000!5m2!1sen!2s"
+                            width="100%"
+                            height="250"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                </div>
+                <!-- END RIGHT SIDE -->
+
+            </div><!-- end row -->
+        </div>
+    </section>
+    <!-- ========== END CONTACT SECTION ========== -->
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>🏥 MediCare Clinic</h5>
+                    <p>Providing quality healthcare to the people of Pakistan since 2022.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p>📍 Block A, Nishtar, Multan</p>
+                    <p>📞 03703578121</p>
+                    <p>📧 info@medicare.pk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 MediCare Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+</body>
+</html>
