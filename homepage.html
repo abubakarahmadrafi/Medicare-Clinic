@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Clinic - Home</title>
+
+    <!-- Bootstrap CSS - gives us ready-made styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Our own CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNavbar">
+        <div class="container">
+
+            <!-- Clinic name on the left -->
+            <a class="navbar-brand fw-bold fs-4" href="homepage.html">🏥 MediCare</a>
+
+            <!-- Hamburger button - only appears on mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+<!-- Hero Section -->
+    <section class="hero-section text-center" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/doctor.jpg') center/cover no-repeat;">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Welcome to MediCare Clinic</h1>
+            <p class="lead mb-4">Your Health Is Our First Priority</p>
+            <p class="mb-4">Trusted medical care by experienced doctors. We are here for you 24/7.</p>
+            <a href="appointment.html" class="btn btn-light btn-lg me-2">Book Appointment</a>
+            <a href="services.html" class="btn btn-outline-light btn-lg">Our Services</a>
+        </div>
+    </section>
+
+<!-- Services Overview -->
+    <section class="section-padding bg-light">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We provide a wide range of medical services</p>
+            </div>
+
+            <!-- row + col-md-3 = 4 cards side by side on desktop, stacked on mobile -->
+            <div class="row g-4">
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center p-4 h-100">
+                        <div class="service-icon">🫀</div>
+                        <h5 class="fw-bold">Cardiology</h5>
+                        <p class="text-muted">Expert heart care and treatment for all cardiac conditions.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center p-4 h-100">
+                        <div class="service-icon">🦷</div>
+                        <h5 class="fw-bold">Dentistry</h5>
+                        <p class="text-muted">Complete dental care from cleaning to surgery.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center p-4 h-100">
+                        <div class="service-icon">🩺</div>
+                        <h5 class="fw-bold">General Medicine</h5>
+                        <p class="text-muted">Routine checkups and treatment for common illnesses.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="card text-center p-4 h-100">
+                        <div class="service-icon">👶</div>
+                        <h5 class="fw-bold">Pediatrics</h5>
+                        <p class="text-muted">Specialized care for infants, children, and teenagers.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary btn-lg">View All Services</a>
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- Stats Section -->
+    <section class="stats-section text-center">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <div class="stat-number" id="patients">0</div>
+                    <div class="stat-label">Happy Patients</div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="stat-number" id="doctors">0</div>
+                    <div class="stat-label">Expert Doctors</div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <div class="stat-number" id="years">0</div>
+                    <div class="stat-label">Years of Experience</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<!-- why chsoose us Section -->
+
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">Why Choose Us?</h2>
+                <p class="section-subtitle">We are committed to providing the best healthcare</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="fs-1 mb-3">🕐</div>
+                        <h5 class="fw-bold">24/7 Available</h5>
+                        <p class="text-muted">We are available round the clock for any emergency.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="fs-1 mb-3">👨‍⚕️</div>
+                        <h5 class="fw-bold">Expert Doctors</h5>
+                        <p class="text-muted">Our team consists of highly qualified and experienced doctors.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="fs-1 mb-3">🏥</div>
+                        <h5 class="fw-bold">Modern Equipment</h5>
+                        <p class="text-muted">We use the latest medical technology for accurate diagnosis.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <h5>🏥 MediCare Clinic</h5>
+                    <p>Providing quality healthcare to the people of Pakistan since 2022.</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p>📍 Block A,Nishtar, Multan</p>
+                    <p>📞 03703578121</p>
+                    <p>📧 info@medicare.pk</p>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>© 2021 MediCare Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  js file -->
+    <script src="js/javascript.js"></script>
+
+</body>
+</html>
