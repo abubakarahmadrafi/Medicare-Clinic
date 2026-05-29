@@ -12,7 +12,7 @@ and works on mobile, tablet, and desktop screens.
 
 | Page | File | Description |
 |------|------|-------------|
-| Home | index.html | Clinic intro, services overview, stats counter, why choose us section |
+| Home | homepage.html | Clinic intro, services overview, stats counter, why choose us section |
 | Doctors | doctors.html | Doctor profiles with filter by specialty and live search bar |
 | Services | services.html | All medical services with Read More toggle feature |
 | Appointment | appointment.html | Online appointment booking form with full validation |
@@ -44,9 +44,10 @@ and works on mobile, tablet, and desktop screens.
 
 ## File Structure
 
+```
 medicare-clinic/
 │
-├── index.html
+├── homepage.html
 ├── doctors.html
 ├── services.html
 ├── appointment.html
@@ -59,6 +60,7 @@ medicare-clinic/
 │   └── main.js
 │
 └── README.md
+```
 
 ---
 
@@ -66,23 +68,6 @@ medicare-clinic/
 
 1. Download or clone this repository
 2. Open the medicare-clinic folder
-3. Double click index.html to open in browser
+3. Double click homepage.html to open in browser
 4. No installation or internet connection needed except for Bootstrap CDN
 
----
-
-## Group Members
-
-| Name | Role |
-|------|------|
-| [Your Name] | Developer - Built all pages and JavaScript features |
-| [Member 2 Name] | Presenter |
-| [Member 3 Name] | Presenter |
-
----
-
-## Course Information
-
-- **Course:** CL02-APPLY
-- **Project Type:** Semester Group Project
-- **Technologies:** HTML, CSS, JavaScript, Bootstrap 5
