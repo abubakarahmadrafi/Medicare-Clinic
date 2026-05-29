@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - MediCare Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="homepage.html">🏥 MediCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ========== END NAVBAR ========== -->
+
+
+    <!-- ========== PAGE HEADER ========== -->
+    <div class="page-header">
+        <h1 class="fw-bold">Our Services</h1>
+        <p>Comprehensive medical services for your health needs</p>
+    </div>
+
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="section-padding">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <!-- Service Card 1 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="service-icon">🫀</div>
+                        <h5 class="fw-bold">Cardiology</h5>
+                        <p class="text-muted">Expert heart care by qualified cardiologists.</p>
+
+                        <!-- Hidden extra text - shown when Read More is clicked -->
+                        <!-- id="extra1" is passed to toggleReadMore() in JavaScript -->
+                        <div class="extra-info" id="extra1">
+                            We offer ECG, stress tests, echocardiography, and full cardiac
+                            checkups. Our cardiologists treat all heart conditions with
+                            modern equipment.
+                        </div>
+
+                        <!-- onclick calls toggleReadMore() function in main.js -->
+                        <!-- 'extra1' tells the function which div to show/hide -->
+                        <!-- 'this' passes the button itself so we can change its text -->
+                        <button class="btn btn-outline-primary btn-sm mt-3"
+                            onclick="toggleReadMore('extra1', this)">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="service-icon">🦷</div>
+                        <h5 class="fw-bold">Dentistry</h5>
+                        <p class="text-muted">Complete dental care from cleaning to surgery.</p>
+
+                        <div class="extra-info" id="extra2">
+                            Services include tooth cleaning, fillings, extractions, braces,
+                            root canal treatment, and dental implants by expert dentists.
+                        </div>
+
+                        <button class="btn btn-outline-primary btn-sm mt-3"
+                            onclick="toggleReadMore('extra2', this)">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="service-icon">🩺</div>
+                        <h5 class="fw-bold">General Medicine</h5>
+                        <p class="text-muted">Routine checkups and treatment for common illnesses.</p>
+
+                        <div class="extra-info" id="extra3">
+                            Covers fever, flu, infections, diabetes management, blood pressure
+                            monitoring, and general health checkups for all age groups.
+                        </div>
+
+                        <button class="btn btn-outline-primary btn-sm mt-3"
+                            onclick="toggleReadMore('extra3', this)">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="service-icon">👶</div>
+                        <h5 class="fw-bold">Pediatrics</h5>
+                        <p class="text-muted">Specialized care for children and infants.</p>
+
+                        <div class="extra-info" id="extra4">
+                            Complete child healthcare including vaccinations, growth monitoring,
+                            nutrition guidance, and treatment of childhood diseases.
+                        </div>
+
+                        <button class="btn btn-outline-primary btn-sm mt-3"
+                            onclick="toggleReadMore('extra4', this)">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="service-icon">🦴</div>
+                        <h5 class="fw-bold">Orthopedics</h5>
+                        <p class="text-muted">Bone and joint care by expert orthopedic surgeons.</p>
+
+                        <div class="extra-info" id="extra5">
+                            Treatment for fractures, arthritis, back pain, sports injuries,
+                            and joint replacement surgeries using latest techniques.
+                        </div>
+
+                        <button class="btn btn-outline-primary btn-sm mt-3"
+                            onclick="toggleReadMore('extra5', this)">Read More</button>
+                    </div>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="col-md-4">
+                    <div class="card p-4 text-center h-100">
+                        <div class="service-icon">🧠</div>
+                        <h5 class="fw-bold">Neurology</h5>
+                        <p class="text-muted">Brain and nervous system care by specialists.</p>
+
+                        <div class="extra-info" id="extra6">
+                            Diagnosis and treatment of migraines, epilepsy, stroke,
+                            Parkinson's, and other neurological disorders using
+                            advanced diagnostics.
+                        </div>
+
+                        <button class="btn btn-outline-primary btn-sm mt-3"
+                            onclick="toggleReadMore('extra6', this)">Read More</button>
+                    </div>
+                </div>
+
+            </div><!-- end row -->
+
+        </div>
+    </section>
+    <!-- ========== END SERVICES SECTION ========== -->
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>🏥 MediCare Clinic</h5>
+                    <p>Providing quality healthcare to the people of Pakistan since 2022.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p>📍 Block A, Nishtar, Mulltan</p>
+                    <p>📞 0370-3578121</p>
+                    <p>📧 info@medicare.pk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 MediCare Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+</body>
+</html>
