@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - MediCare Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="homepage.html">🏥 MediCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="doctors.html">Doctors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+
+
+    <!-- ========== PAGE HEADER ========== -->
+    <div class="page-header">
+        <h1 class="fw-bold">Our Doctors</h1>
+        <p>Meet our team of expert medical professionals</p>
+    </div>
+
+
+    <!-- ========== DOCTORS SECTION ========== -->
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- SEARCH BAR -->
+            <!-- User types here, JavaScript filters cards in real time -->
+            <div class="search-box">
+                <input type="text" id="searchInput" class="form-control form-control-lg"
+                    placeholder="🔍 Search doctor by name...">
+            </div>
+
+            <!-- FILTER BUTTONS -->
+            <!-- data-filter value is read by JavaScript to decide which cards to show -->
+            <div class="text-center mb-4">
+                <button class="btn btn-outline-primary filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="cardiologist">Cardiologist</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="dentist">Dentist</button>
+                <button class="btn btn-outline-primary filter-btn" data-filter="general">General Physician</button>
+            </div>
+
+            <!-- DOCTOR CARDS -->
+            <!-- id="doctorsContainer" is used by JavaScript to find all cards inside -->
+            <!-- data-specialty is used for filter buttons -->
+            <!-- data-name is used for the search bar -->
+            <div class="row g-4" id="doctorsContainer">
+
+                <!-- Doctor 1 -->
+                <div class="col-md-4" data-specialty="cardiologist" data-name="dr Muhammad khan">
+                    <div class="card text-center doctor-card p-3">
+                       <img src="images/male.jpg" class="doctor-img" alt="">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Dr. Muhammad Khan</h5>
+                            <p class="text-primary mb-1">Cardiologist</p>
+                            <p class="text-muted small">10 years experience</p>
+                                <a href="appointment.html" class="btn btn-sm btn-primary mt-2">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 2 -->
+                <div class="col-md-4" data-specialty="dentist" data-name="dr Ahsan ali">
+                    <div class="card text-center doctor-card p-3">
+                       <img src="images/male.jpg" class="doctor-img" alt="Image">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Dr. Ahsan Ali</h5>
+                            <p class="text-primary mb-1">Dentist</p>
+                            <p class="text-muted small">8 years experience</p>
+                            <a href="appointment.html" class="btn btn-sm btn-primary mt-2">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 3 -->
+                <div class="col-md-4" data-specialty="general" data-name="dr Qadir malik">
+                    <div class="card text-center doctor-card p-3">
+                        <img src="images/male.jpg" class="doctor-img" alt="">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Dr. Qadir Malik</h5>
+                            <p class="text-primary mb-1">General Physician</p>
+                            <p class="text-muted small">12 years experience</p>
+                            <a href="appointment.html" class="btn btn-sm btn-primary mt-2">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 4 -->
+                <div class="col-md-4" data-specialty="cardiologist" data-name="dr Ali raza">
+                    <div class="card text-center doctor-card p-3">
+                        <img src="images/male.jpg" class="doctor-img" alt="">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Dr. Ali Raza</h5>
+                            <p class="text-primary mb-1">Cardiologist</p>
+                            <p class="text-muted small">7 years experience</p>
+                            <a href="appointment.html" class="btn btn-sm btn-primary mt-2">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 5 -->
+                <div class="col-md-4" data-specialty="dentist" data-name="dr Waqar hassan">
+                    <div class="card text-center doctor-card p-3">
+                        <img src="images/male.jpg" class="doctor-img" alt="">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Dr. Waqar Hassan</h5>
+                            <p class="text-primary mb-1">Dentist</p>
+                            <p class="text-muted small">5 years experience</p>
+                            <a href="appointment.html" class="btn btn-sm btn-primary mt-2">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doctor 6 -->
+                <div class="col-md-4" data-specialty="general" data-name="dr Alia baig">
+                    <div class="card text-center doctor-card p-3">
+                       <img src="images/female.jpg" class="doctor-img" alt="">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Dr. Alia Baig</h5>
+                            <p class="text-primary mb-1">General Physician</p>
+                            <p class="text-muted small">9 years experience</p>
+                            <a href="appointment.html" class="btn btn-sm btn-primary mt-2">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end row -->
+
+        </div>
+    </section>
+    <!-- ========== END DOCTORS SECTION ========== -->
+
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>🏥 MediCare Clinic</h5>
+                    <p>Providing quality healthcare to the people of Pakistan since 2022.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <p>📍 Block A, Nishtar, Multan</p>
+                    <p>📞 0370-35788121</p>
+                    <p>📧 info@medicare.pk</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 MediCare Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== END FOOTER ========== -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+</body>
+</html>
