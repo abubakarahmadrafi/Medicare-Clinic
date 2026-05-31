@@ -174,22 +174,25 @@ footer a:hover {
 
 /* ---------- PAGE HEADER (top of inner pages) ---------- */
 .page-header {
-    background: linear-gradient(135deg, #1a6fd4, #2b7de9, #4a90e2);
-    text-align: center;
-    padding: 80px 20px;
-    width: 100%;
-    color: white;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/doctors.jpg');
+  background-size: cover;
+  background-position: top center;  /* ← this shows faces, not torso */
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 80px 20px 230px 20px;
+  text-align: center;
+  color: white;
 }
 
 .page-header h1 {
-    color: white;
-    font-weight: bold;
-    font-size: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
 }
 
 .page-header p {
-    color: white;
-    font-size: 1rem;
+  font-size: 1rem;
+  color: white;
 }
 /* ---------- SEARCH BAR ---------- */
 .search-box {
