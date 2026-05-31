@@ -68,12 +68,12 @@ function animateCounter(elementId, target, suffix) {
     }, 30);
 }
 
-// Run all 3 counters when the page finishes loading
-window.onload = function () {
-    animateCounter('patients', 500, '+'); // Counts to 500+
-    animateCounter('doctors',  20,  '+'); // Counts to 20+
-    animateCounter('years',    10,  '+'); // Counts to 10+
-};
+// // Run all 3 counters when the page finishes loading
+// window.onload = function () {
+//     animateCounter('patients', 500, '+'); // Counts to 500+
+//     animateCounter('doctors',  20,  '+'); // Counts to 20+
+//     animateCounter('years',    10,  '+'); // Counts to 10+
+// };
 
 
 // =============================================
