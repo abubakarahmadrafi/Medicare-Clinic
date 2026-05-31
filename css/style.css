@@ -174,7 +174,6 @@ footer a:hover {
 
 /* ---------- PAGE HEADER (top of inner pages) ---------- */
 .page-header {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/doctors.jpg');
   background-size: cover;
   background-position: top center;  /* ← this shows faces, not torso */
   background-repeat: no-repeat;
